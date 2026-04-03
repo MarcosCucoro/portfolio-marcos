@@ -1,10 +1,13 @@
 import { ExternalLink } from "lucide-react";
 import { LuGithub } from "react-icons/lu";
+import rickyMorty from '@/assets/ricky_morty.png'
+import currencyConverter from '@/assets/currency_converter.png'
+import portfolio from '@/assets/portfolio.png'
 
 export default function Projects() {
   const projects = [
     {
-      image: '/src/assets/ricky_morty.png',
+      image: rickyMorty,
       title: 'Rick and Morty Universe Explorer',
       description: 'Um projeto que utiliza a API do Rick and Morty para criar um explorador interativo dos personagens, episódios e locais da série. O aplicativo é construído com Angular permitindo aos usuários navegar por informações detalhadas sobre o universo de Rick and Morty, incluindo filtros avançados e uma interface amigável.',
       technologies: ['Angular', 'TypeScript', 'HTML5', 'SCSS', 'RxJS', 'Angular CLI', 'API REST'],
@@ -12,7 +15,7 @@ export default function Projects() {
       demo: 'https://rick-morty-gold.vercel.app'
     },
     {
-      image: '/src/assets/currency_converter.png',
+      image: currencyConverter,
       title: 'Currency Converter',
       description: 'Um projeto que permite a conversão de moedas em tempo real, utilizando uma API de câmbio atualizada. O aplicativo é construído com Angular e oferece uma interface simples e intuitiva para os usuários.',
       technologies: ['Angular', 'TypeScript', 'HTML5', 'SCSS', 'RxJS', 'Angular CLI', 'API REST'],
@@ -20,12 +23,12 @@ export default function Projects() {
       demo: ''
     },
     {
-      image: '/src/assets/portfolio.png',
+      image: portfolio,
       title: 'Portfólio Pessoal',
       description: 'Meu portfólio pessoal, desenvolvido para apresentar minhas habilidades, experiências e projetos. Construído com React e Tailwind CSS, o site é responsivo e otimizado para uma experiência de usuário fluida.',
       technologies: ['React', 'Tailwind CSS'],
-      github: '#',
-      demo: '#'
+      github: 'https://github.com/MarcosCucoro/portfolio-marcos',
+      demo: 'https://portfolio-marcos-zeta.vercel.app/'
     }
   ]
 

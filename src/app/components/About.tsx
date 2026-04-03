@@ -1,3 +1,5 @@
+import programadorImg from '@/assets/programador.png';
+
 export default function About() {
   return (
     <section id="about" className="py-20 px-6 bg-gray-50 dark:bg-gray-800/50">
@@ -20,7 +22,10 @@ export default function About() {
           </div>
           <div className="order-1 md:order-2">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img src="/src/assets/programador.png" alt="Caricatura" className="w-full h-auto" />
+              <img
+                src={programadorImg}
+                alt="Caricatura" 
+                className="w-full h-auto" />
               <legend className="text-sm absolute bottom-0 left-0 right-0 bg-black/10 text-white/20 text-center py-1">
                 Imagem ilustrativa, criada por IA a partir de uma foto minha real.
               </legend>
