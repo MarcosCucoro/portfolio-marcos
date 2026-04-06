@@ -1,73 +1,121 @@
-# React + TypeScript + Vite
+# 💼 Portfólio Marcos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um portfólio web moderno e responsivo, desenvolvido com React, TypeScript e Vite. Apresenta uma interface elegante com tema claro/escuro, seções de apresentação, projetos e contato.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Design Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
+- **Tema Claro/Escuro**: Toggle de tema para uma melhor experiência do usuário
+- **Performance Otimizada**: Construído com Vite para build rápido e desenvolvimento eficiente
+- **TypeScript**: Código tipado para maior segurança e mantenibilidade
+- **Componentes Modulares**: Estrutura limpa e organizada
+- **Links Sociais**: Integração com redes sociais (GitHub, LinkedIn, Email)
 
-## React Compiler
+## 📁 Estrutura do Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── app/
+│   ├── App.tsx              # Componente principal
+│   └── components/
+│       ├── Header.tsx       # Navegação
+│       ├── Hero.tsx         # Seção inicial de apresentação
+│       ├── About.tsx        # Sobre mim
+│       ├── Skills.tsx       # Habilidades técnicas
+│       ├── Projects.tsx     # Portfólio de projetos
+│       ├── Contact.tsx      # Formulário de contato
+│       ├── Footer.tsx       # Rodapé
+│       ├── SocialLinks.tsx  # Links sociais
+│       └── ThemeToggle.tsx  # Alternador de tema
+├── data/
+│   └── socialLinks.ts       # Dados dos links sociais
+├── models/
+│   └── socialLink.ts        # Type de link social
+├── styles/
+│   └── theme.css            # Estilos e temas
+├── assets/                  # Imagens e recursos
+├── index.css                # Estilos globais
+└── main.tsx                 # Ponto de entrada
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Como Começar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Pré-requisitos
+- Node.js 16+ 
+- npm ou yarn
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Instalação
+
+1. Clone o repositório
+```bash
+git clone https://github.com/MarcosCucoro/portfolio-marcos.git
+cd portfolio-marcos
+```
+
+2. Instale as dependências
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento
+```bash
+npm run dev
+```
+
+O projeto estará disponível em `http://localhost:5173`
+
+## 📦 Scripts Disponíveis
+
+```bash
+# Desenvolvimento com HMR
+npm run dev
+
+# Build para produção
+npm build
+
+# Preview da build
+npm run preview
+
+# Lint do código
+npm run lint
+```
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React 18** - Biblioteca de UI
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool e dev server
+- **Tailwind CSS** - Framework de estilos
+- **ESLint** - Linter para qualidade de código
+
+## 📄 Seções Principais
+
+- **Hero**: Apresentação inicial com chamada para ação
+- **About**: Informações pessoais e biografia
+- **Skills**: Habilidades técnicas e ferramentas
+- **Projects**: Galeria de projetos e trabalhos realizados
+- **Contact**: Formulário e links para entrarem em contato
+
+## 🎨 Personalização
+
+Para personalizar o portfólio:
+
+1. **Social Links**: Edite `src/data/socialLinks.ts` com seus links
+2. **Temas**: Modificar `src/styles/theme.css` para ajustar cores
+3. **Conteúdo**: Atualize os componentes em `src/app/components/`
+
+## 📱 Responsividade
+
+O projeto é totalmente responsivo e se adapta para:
+- Desktop (1920px+)
+- Tablet (768px - 1024px)
+- Mobile (até 767px)
+
+## 📝 Licença
+
+Este projeto é de código aberto. Sinta-se livre para usar e adaptar conforme necessário.
+
+---
+
+**Desenvolvido com ❤️ por Marcos**
 ```
