@@ -1,5 +1,4 @@
-import { Mail } from "lucide-react"
-import { LuGithub, LuLinkedin } from "react-icons/lu"
+import { socialLinks } from '../../data/socialLinks';
 
 export default function Hero() {
   return (
@@ -22,22 +21,12 @@ export default function Hero() {
               Entre em Contato
             </a>
           </div>
-          <div className="flex items-center justify-center gap-6">
-            <a href="#github"
-              target="_blank"
-              className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors">
-              <LuGithub className="w-5 h-5 text-gray-900 dark:text-white" />
-            </a>
-            <a href="#linkedin"
-              target="_blank"
-              className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors">
-              <LuLinkedin className="w-5 h-5 text-gray-900 dark:text-white" />
-            </a>
-            <a href="#mail"
-              target="_blank"
-              className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors">
-              <Mail className="w-5 h-5 text-gray-900 dark:text-white" />
-            </a>
+          <div className="flex items-center justify-center gap-4">
+            {socialLinks.map(({ icon: Icon, url }, index) => (
+              <a key={index} href={url} target="_blank" className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors">
+                <Icon className="w-5 h-5 text-gray-900 dark:text-white" />
+              </a>
+            ))}
           </div>
         </div>
       </div>

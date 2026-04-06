@@ -26,8 +26,8 @@ export default function About() {
                 src={programadorImg}
                 alt="Caricatura" 
                 className="w-full h-auto" />
-              <legend className="text-sm absolute bottom-0 left-0 right-0 bg-black/10 text-white/20 text-center py-1">
-                Imagem ilustrativa, criada por IA a partir de uma foto minha real.
+              <legend className="text-sm absolute bottom-0 left-0 right-0 bg-black/10 text-white/10 text-center py-1">
+                Imagem ilustrativa, criada por IA a partir de uma foto real.
               </legend>
             </div>
           </div>
