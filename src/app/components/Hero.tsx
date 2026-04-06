@@ -17,7 +17,7 @@ export default function Hero() {
               className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
               Ver Projetos
             </a>
-            <a href="#contato"
+            <a href="#contact"
               className="px-8 py-3 border-2 border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white hovar:border-blue-600 dark:hover:border-blue-400 rounded-lg transition-colors">
               Entre em Contato
             </a>

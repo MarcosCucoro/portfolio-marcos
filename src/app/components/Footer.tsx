@@ -15,19 +15,20 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <a href="#github"
+            <a href="https://github.com/MarcosCucoro"
               target="_blank"
               className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <LuGithub className="w-5 h-5" />
             </a>
-            <a href="#linkedin"
+            <a href="https://www.linkedin.com/in/marcoscucoro/"
               target="_blank"
               className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               <LuLinkedin className="w-5 h-5" />
             </a>
-            <a href="#mail"
+            <a href="mailto:marcos.cucoro@hotmail.com"
               target="_blank"
               className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              
               <Mail className="w-5 h-5" />
             </a>
           </div>
